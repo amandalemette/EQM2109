@@ -1,4 +1,4 @@
-## Final Project. Course. EQM: 2108
+## Final Project. Course. EQM: 2109
 
 ## Title: Dynamic Monte Carlo Simulation of Atom-Transfer Radical Polymerization
 
