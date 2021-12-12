@@ -85,7 +85,7 @@ Finally, the function jit is used on Python in order to speed up the iteration p
   
 ## Results:
   
-No results for the aimed properties (the monomer conversion, the polydispersity and the complete molecular weight distribution) were obtained as the simulation based on Monte Carlo did not run as expected. The designed iteration seems to have an erro, as it picks the probability to identify which steps to follow.   
+No results for the aimed properties (the monomer conversion, the polydispersity and the complete molecular weight distribution) were obtained as the simulation based on Monte Carlo did not run as expected. The designed iteration seems to have an erro, as it selects the probability to identify which step follows.   
 
 ## References: 
 
