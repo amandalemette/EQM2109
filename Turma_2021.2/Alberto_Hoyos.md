@@ -19,6 +19,8 @@ Knowing the theorical foot for these models, it is possible to develop a dynamic
 ## Methodology: 
 
 ## Results:
+  
+No results for the aimed properties (the monomer conversion, the polydispersity and the complete molecular weight distribution) were obtained as the simulation based on Monte Carlo did not run properly. 
 
 ## Discussion:
 
