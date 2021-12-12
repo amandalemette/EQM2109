@@ -64,6 +64,11 @@ Another random number (r2) is generated to determine the time interval (t) betwe
   
 <center><img src="https://github.com/amandalemette/EQM2109/blob/1fa3a21f0ecbfd9843dadf0012c2385d17d65247/Imagens/6.png"  width=500 height=350 /><center>
   
+                                              Figure No. 6 Probability definition
+
+where: Rv is the reaction rate of vth reaction. Mu is the number of the selected reaction type and r1 is a random number distributed uniformly in the interval
+[0, 1].
+  
 This whole definition is shown in the figure No. 7
   
 ## Results:
