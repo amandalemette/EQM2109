@@ -81,6 +81,8 @@ Fourth step: Set the reactions rates for every case (mu equal from 1 to 5)
   
 In order to define every reaction rate is needed to take into account the species involved in every reaction. Furthermore, as the computational effort (memory, capacity of iteration and time simulation) is an important factor to determine which reaction has priority to start the iteration, it is suggested: Testing different low values for the reaction volumen (control volume) and the reaction time and rearranging the code (mu) giving priority to the propagation section. This last consideration is made according to that the propagation step increases the length of polymer radicals by the sequential addition of monomer molecules. So, the propagation reactions will continue until some chain termination or transfer step occurs (Al-Harthi, B.P. Soares, and C. Simon, 2006). 
   
+Finally, the function jit is used on Python in order to speed up the iteration process. 
+  
 ## Results:
   
 No results for the aimed properties (the monomer conversion, the polydispersity and the complete molecular weight distribution) were obtained as the simulation based on Monte Carlo did not run as expected. The designed iteration seems to have an erro, as it picks the probability to identify which steps to follow.   
