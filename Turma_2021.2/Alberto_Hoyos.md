@@ -10,7 +10,7 @@
 
 Monte Carlo simulation uses random sampling and statistical modeling to estimate mathematical functions and mimic the operations of complex systems. (Harrison, Granja and Leroy, 2021). Mainly, this method inverts the usual problem of statistics: rather than estimating random quantities in a deterministic manner, random quantities are employed to provide estimates of deterministic quantities. On the other hand, ATRP is another kind of carrying ourt living polymerization. This method sets up an equilibrium between a dormant phase of polymer chains and a growing phase. In the dormant phase, radicals have been trapped and are protected from termination, but are also unable to participate in polymerization. In the growing phase, radical chains have been released and can continue to grow by adding monomers in a radical mechanism. The idea is to release just a few radical chains at a time, recapturing them before they have a chance to undergo chain termination events (Living Radical Polymerization- ATRP, 2021). The mechanism depicted is shown in the figure No. 1.
 
-<center><img src="https://github.com/amandalemette/EQM2109/blob/89b3dc3a45c1e6fabb0ddbbc53248f05dea8af5c/Imagens/figure1.png"  width=1800 height=450 /><center>
+<center><img src="https://github.com/amandalemette/EQM2109/blob/c76c3bf3300c34d1091c8b4597a3e461e4bfb305/Imagens/1.1.jpg"  width=1800 height=450 /><center>
   
                                           Figure No. 1. (Purkait, Sinha, Mondal and Singh, 2021)
 
