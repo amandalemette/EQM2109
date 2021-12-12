@@ -64,12 +64,18 @@ Another random number (r2) is generated to determine the time interval (t) betwe
   
 <center><img src="https://github.com/amandalemette/EQM2109/blob/1fa3a21f0ecbfd9843dadf0012c2385d17d65247/Imagens/6.png"  width=500 height=350 /><center>
   
-                                              Figure No. 6 Probability definition
+                                          Figure No. 6 Probability definition
 
 where: Rv is the reaction rate of vth reaction. Mu is the number of the selected reaction type and r1 is a random number distributed uniformly in the interval
 [0, 1].
+
+According to the definition and the aims for this paper, the upper and lower limits for v are 5 and 1.
   
-This whole definition is shown in the figure No. 7
+This whole definition written on Python is shown in the figure No. 7.
+  
+<center><img src="https://github.com/amandalemette/EQM2109/blob/a58b83cdff9ab6fa0ffc2d724f25ee9c64bf15ee/Imagens/7.png"  width=500 height=350 /><center>
+  
+                                          Figure No. 7 Setting the probability model on Python 
   
 ## Results:
   
