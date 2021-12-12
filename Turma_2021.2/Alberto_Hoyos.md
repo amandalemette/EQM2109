@@ -73,7 +73,7 @@ According to the definition and the aims for this paper, the upper and lower lim
   
 This whole definition written on Python is shown in the figure No. 7.
   
-<center><img src="https://github.com/amandalemette/EQM2109/blob/a58b83cdff9ab6fa0ffc2d724f25ee9c64bf15ee/Imagens/7.png"  width=500 height=550 /><center>
+<center><img src="https://github.com/amandalemette/EQM2109/blob/a58b83cdff9ab6fa0ffc2d724f25ee9c64bf15ee/Imagens/7.png"  width=500 height=450 /><center>
   
                                           Figure No. 7 Setting the probability model on Python 
   
