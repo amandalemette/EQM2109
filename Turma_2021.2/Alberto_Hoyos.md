@@ -52,7 +52,19 @@ Being defined the Monte Carlo parameters, the Monte Carlo rates are set involvin
   
 <center><img src="https://github.com/amandalemette/EQM2109/blob/3451f49a3c88753e207d9581ef54953d97470038/Imagens/5.png"  width=1800 height=550 /><center>
           
-                                          Figure No. 5. Setting the Monte Carlo rates 
+                                          Figure No. 5. Setting the Monte Carlo rates
+  
+Third step: Define the simution model, which implicates: Reaction probabilities and random values (from 0 to 1) in order to activate the probability definition and the reaction rates. 
+  
+The probability of any reaction (Pv) taking place at a given time is calculated with the equation shown in the figure No. 6
+  
+This another relation is used in order to determine which reaction will occur, by the definition of a random number (r1), shown in the figure No. 6
+  
+Another random number (r2) is generated to determine the time interval (t) between two consecutive reactions. The time step is related to the inverse of the total stochastic rates and the natural logarithmic of r2 according to the equation, shown in the figure No 6.
+  
+<center><img src="https://github.com/amandalemette/EQM2109/blob/f13e1323ac69b26368adb7b432e081ddd2445f07/Imagens/6.png"  width=1800 height=550 /><center>
+  
+This whole definition is shown in the figure No. 9
   
 ## Results:
   
