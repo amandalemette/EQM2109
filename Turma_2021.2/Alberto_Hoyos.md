@@ -12,7 +12,7 @@ Monte Carlo simulation uses random sampling and statistical modeling to estimate
 
 <center><img src="https://github.com/amandalemette/EQM2109/blob/89b3dc3a45c1e6fabb0ddbbc53248f05dea8af5c/Imagens/figure1.png"  width=1800 height=450 /><center>
   
-                                           Figure No. 1 (Purkait, Sinha, Mondal and Singh, 2021)
+                                          Figure No. 1. (Purkait, Sinha, Mondal and Singh, 2021)
 
 Knowing the theorical foot for these models, it is possible to develop a dynamic Monte Carlo model in order to simulate an atom-transfer radical polymerization (ATRP). This simulation includes the calculation of different stages ocurring during the polymerization: Activatiod, deactivation, propagation, termination by combination and transfer to monomer. Through the definition of every reaction rate, it is possible to estimate the monomer conversion, the polydispersity and the complete molecular weight distribution. Basically, these predicions may be represented by graphics showing the performance of the simuation (Monte Carlo) and polymerization (ARTP) applied. 
 
