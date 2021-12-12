@@ -83,9 +83,7 @@ In order to define every reaction rate is needed to take into account the specie
   
 ## Results:
   
-No results for the aimed properties (the monomer conversion, the polydispersity and the complete molecular weight distribution) were obtained as the simulation based on Monte Carlo did not run properly. 
-
-## Discussion:
+No results for the aimed properties (the monomer conversion, the polydispersity and the complete molecular weight distribution) were obtained as the simulation based on Monte Carlo did not run as expected. The designed iteration seems to have an erro, as it picks the probability to identify which steps to follow.   
 
 ## References: 
 
