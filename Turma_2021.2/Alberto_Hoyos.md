@@ -32,7 +32,7 @@ Figure No. 2. Setting the operation conditions (temperature, the reaction volume
   
 Second step: Define and set the Monte Carlo parameters and the Monte Carlo rates. 
   
-Based on Gillespie, experimental rate constants are transformed into stochastic rate constants (Monte Carlo parameters) with the equations:
+Based on Gillespie, experimental rate constants are transformed into stochastic rate constants (Monte Carlo parameters) with the three equations:
 
 1) First order reactions: kmc = kexp
 
@@ -45,6 +45,12 @@ This definition is shown in the figure No. 4. (As ktd0 = 0, ktdMC = 0)
 <center><img src="https://github.com/amandalemette/EQM2109/blob/0f27db19c4063878cb4b1af127675f43bc250475/Imagens/4.png"  width=1800 height=550 /><center>
   
                                           Figure No. 4. Setting the Monte Carlo parameters 
+  
+As the only reaction which involves similar species is termination by combination, it is needed to apply the equation No. 3. On the other reactions is inforced to apply the equation No. 2.
+  
+Being defined the Monte Carlo parameters, the Monte Carlo rates are set. 
+  
+  
   
 ## Results:
   
