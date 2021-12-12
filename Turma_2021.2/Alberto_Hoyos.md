@@ -62,7 +62,7 @@ This another relation is used in order to determine which reaction will occur, b
   
 Another random number (r2) is generated to determine the time interval (t) between two consecutive reactions. The time step is related to the inverse of the total stochastic rates and the natural logarithmic of r2 according to the equation, shown in the figure No 6.
   
-<center><img src="https://github.com/amandalemette/EQM2109/blob/f13e1323ac69b26368adb7b432e081ddd2445f07/Imagens/6.png"  width=1800 height=1000 /><center>
+<center><img src="https://github.com/amandalemette/EQM2109/blob/f13e1323ac69b26368adb7b432e081ddd2445f07/Imagens/6.png"  width=2200 height=1000 /><center>
   
 This whole definition is shown in the figure No. 9
   
