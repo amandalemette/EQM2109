@@ -22,7 +22,7 @@ The methodology developed in order to realize the Monte Carlo simulation is divi
   
 First step: Define and set the operation conditions (temperature, the reaction volume, the reaction time, the gel effect constants, the experimental rate constants and the initial conditions for especies). This is shown in the figures No. 2 and 3.
   
-<center><img src="https://github.com/amandalemette/EQM2109/blob/73c92740ef10b72c45bb250203fa15c1115592db/Imagens/2.png"  width=1800 height=450 /><center>
+<center><img src="https://github.com/amandalemette/EQM2109/blob/73c92740ef10b72c45bb250203fa15c1115592db/Imagens/2.png"  width=1800 height=550 /><center>
   
 Figure No. 2. Setting the operation conditions (temperature, the reaction volume, the reaction time, the gel effect constants and the experimental rate constants
   
