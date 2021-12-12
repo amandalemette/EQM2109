@@ -48,9 +48,11 @@ This definition is shown in the figure No. 4. (As ktd0 = 0, ktdMC = 0)
   
 As the only reaction which involves similar species is termination by combination, it is needed to apply the equation No. 3. On the other reactions is inforced to apply the equation No. 2.
   
-Being defined the Monte Carlo parameters, the Monte Carlo rates are set. 
+Being defined the Monte Carlo parameters, the Monte Carlo rates are set involving the species. This definition is shown in the figure No. 5. 
   
-  
+<center><img src="https://github.com/amandalemette/EQM2109/blob/3451f49a3c88753e207d9581ef54953d97470038/Imagens/5.png"  width=1800 height=550 /><center>
+          
+                                          Figure No. 5. Setting the Monte Carlo rates 
   
 ## Results:
   
