@@ -26,7 +26,7 @@ First step: Define and set the operation conditions (temperature, the reaction v
   
 Figure No. 2. Setting the operation conditions (temperature, the reaction volume, the reaction time, the gel effect constants and the experimental rate constants).
   
-<center><img src="https://github.com/amandalemette/EQM2109/blob/ebf5b2de418e2996d4965ba3925564fc5b08622e/Imagens/3.png"  width=1800 height=350 /><center>
+<center><img src="https://github.com/amandalemette/EQM2109/blob/ebf5b2de418e2996d4965ba3925564fc5b08622e/Imagens/3.png"  width=1800 height=550 /><center>
 
 Figure Ni. 3. Setting the initial condition for the species. 
   
