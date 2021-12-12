@@ -28,7 +28,7 @@ Figure No. 2. Setting the operation conditions (temperature, the reaction volume
   
 <center><img src="https://github.com/amandalemette/EQM2109/blob/ebf5b2de418e2996d4965ba3925564fc5b08622e/Imagens/3.png"  width=1800 height=550 /><center>
 
-Figure No. 3. Setting the initial condition for the species. 
+                                          Figure No. 3. Setting the initial condition for the species. 
   
 Second step: Define and set the Monte Carlo parameters and the Monte Carlo rates. 
   
@@ -44,7 +44,7 @@ This definition is shown in the figure No. 4. (As ktd0 = 0, ktdMC = 0)
   
 <center><img src="https://github.com/amandalemette/EQM2109/blob/0f27db19c4063878cb4b1af127675f43bc250475/Imagens/4.png"  width=1800 height=550 /><center>
   
-Figure No. 4. Setting the Monte Carlo parameters 
+                                          Figure No. 4. Setting the Monte Carlo parameters 
   
 ## Results:
   
