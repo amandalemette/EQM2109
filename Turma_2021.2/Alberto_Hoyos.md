@@ -18,7 +18,7 @@ Knowing the theorical foot for these models, it is possible to develop a dynamic
 
 ## Methodology: 
 
-The methodology developed in order to realize the Monte Carlo simulation is divided into 3 steps:
+The methodology developed in order to realize the Monte Carlo simulation is divided into 4 steps:
   
 First step: Define and set the operation conditions (temperature, the reaction volume, the reaction time, the gel effect constants, the experimental rate constants and the initial conditions for especies). This is shown in the figures No. 2 and 3.
   
@@ -77,6 +77,10 @@ This whole definition written on Python is shown in the figure No. 7.
   
                                           Figure No. 7 Setting the probability model on Python 
   
+Fourth step: Set the reactions rates for every case (mu equal from 1 to 5)
+  
+In order to define every reaction rate is needed to take into account the species involved in every reaction. Furthermore, as the computational effort (memory, capacity of iteration and time simulation) is an important factor to determine which reaction has priority to start the iteration, it is suggested: Testing different low values for the reaction volumen (control volume) and the reaction time and rearranging the code (mu) giving priority to the propagation section. This last consideration is made according to that the propagation step increases the length of polymer radicals by the sequential addition of monomer molecules. So, the propagation reactions will continue until some chain termination or transfer step occurs (Al-Harthi, B.P. Soares, and C. Simon, 2006). 
+  
 ## Results:
   
 No results for the aimed properties (the monomer conversion, the polydispersity and the complete molecular weight distribution) were obtained as the simulation based on Monte Carlo did not run properly. 
@@ -85,6 +89,8 @@ No results for the aimed properties (the monomer conversion, the polydispersity 
 
 ## References: 
 
+Al-Harthi, M., B.P. Soares,, J. and C. Simon, L., 2006. Dynamic Monte Carlo Simulation of Atom-Transfer Radical Polymerization. [online] Available at: <https://www.researchgate.net/publication/228014057_Dynamic_Monte_Carlo_Simulation_of_Atom-Transfer_Radical_Polymerization> [Accessed 6 December 2021].
+  
 Chemistry LibreTexts. 2021. 2.11: Living Radical Polymerization- ATRP. [online] Available at: <https://chem.libretexts.org/Bookshelves/Organic_Chemistry/Book%3A_Polymer_Chemistry_(Schaller)/02%3A_Synthetic_Methods_in_Polymer_Chemistry/2.11%3A_Living_Radical_Polymerization-_ATRP> [Accessed 11 December 2021].
 
 Harrison, R., Granja, C. and Leroy, C., 2021. Introduction to Monte Carlo Simulation. [online] NCBI Resources. Available at: <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2924739/> [Accessed 11 December 2021].
