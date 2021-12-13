@@ -77,9 +77,7 @@ Para g = 14, obtém-se o seguinte gráfico:
              
 <center><img src="https://github.com/amandalemette/EQM2109/blob/cb2ef9a6ade1cec390bb8c618fa0de24a7ae4643/Turma_2021.2/Henrique_Abreu/Imagens/g_14.png"             
              
-Portaanto, é necessário um estudo mais aprofundado deste parâmetro para se chegar a um valor que aproxime melhor o modelo.
-             
-Outros parâmetros também precisam ser estudados, tais como:
+Foram realizadas outras tentativas para diferentes valores de g sem que houve uma melhor aproximação do modelo, portanto é necessário um estudo mais aprofundado deste e de outros parâmetros apontados no artigo, tais como:
              
 - A taxa de tensão desviadora objetiva;
 - A tensão cinemática;
