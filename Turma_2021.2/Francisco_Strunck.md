@@ -14,7 +14,9 @@ O estireno é um monômero líquido, incolor e oleoso. Matéria-prima para diver
 
 Particularmente, o poliestireno é formado por reação adição dos monômeros do estireno (Figura 1). O polímero tem destinação principalmente para elastômeros, resinas e poliestireno expandido. O estireno é majoritariamente obtido a partir do etilbenzeno extraído do petróleo. Durante o ano de 2020, o mercado de poliestireno sofreu uma queda de 7 % em função da pandemia. Neste ano o mercado movimentava mais de 30 bilhões de dólares e com projeção de crescimento de 4% ao ano até 2026, uma vez que países asiáticos continuam a construir novas plantas de produção. [8].
 
-<center><img src="https://github.com/amandalemette/EQM2109/blob/d4bac670a6ce3b9506f0b2bcda6cb5782a65aaa6/Turma_2021.2/Francisco/Figura 1.png?raw=true" width=250 height=180 /><center>
+<center><img src="https://github.com/amandalemette/EQM2109/blob/cf5536e05e532ad7b46bd3fce0c2b97325fc0d36/Turma_2021.2/Francisco/Figura%201.png?raw=true"  width=600 height=250 /><center>
+ 
+ 
  
 O poliestireno é um plástico amplamente utilizado, bem estabelecido e está cada vez mais presente no dia a dia. Espera-se que a demanda global aumente e por tanto é necessário que sua produção seja cada vez mais eficiente para atender a alta de seu consumo.
  
@@ -31,17 +33,19 @@ A modelagem matemática é a parte principal deste trabalho. O método dos momen
 
  De modo objetivo, este método pode ser descrito pelas Equações 2.1 e 2.2. A variável i é o comprimento de uma cadeia de polímero (número de unidades monoméricas), P é a concentração molar de cadeia viva e L é a concentração molar de cadeia morta. 
 
-EQUAÇÃO 2.1 2.2
+<center><img src="https://github.com/amandalemette/EQM2109/blob/2ceb3310446b09e8e0a8d406bb4224d998c2a416/Turma_2021.2/Francisco/eq2_1.png?raw=true" /><center> 
+
+<center><img src="https://github.com/amandalemette/EQM2109/blob/2ceb3310446b09e8e0a8d406bb4224d998c2a416/Turma_2021.2/Francisco/eq2_2.png?raw=true" /><center> 
  
 O momento zero, representado quando k = 0, é a soma dos indivíduos daquele sistema. O primeiro momento (k = 1) é a soma dos indivíduos do sistema multiplicado pelo número de unidades monomérica do polímero correspondente, já o segundo momento é a soma dos indivíduos do sistema multiplicado pelo número de unidades monomérica do polímero correspondente elevado ao quadrado e assim por diante.
 
-EQUAÇÃO 2.3 2.4 2.5
+<center><img src="https://github.com/amandalemette/EQM2109/blob/2ceb3310446b09e8e0a8d406bb4224d998c2a416/Turma_2021.2/Francisco/eq2_345.png?raw=true" /><center> 
  
 O momento zero da distribuição do comprimento de cadeia representa a concentração de cadeias poliméricas no sistema, ou seja, o número total de moléculas de polímero. O primeiro momento representa a concentração de unidade monoméricas que foram incorporadas às cadeias poliméricas, ou seja, número total de unidades monoméricas presentes em todas as moléculas de polímero. Os demais momentos não representam conceitos físicos que possam ser objetivamente explicados.
  
 Com base nos momentos é possível predizer dados das propriedades físico-químicas do polímero que são de grande interesse. Neste trabalho, será calculado a massa molar média numérica (𝑀𝑛), massa molar média ponderal (𝑀w), dispersividade (D) e a viscosidade (Eta).
  
-EQUAÇÃO 2.6 2.7 2.8 2.9
+<center><img src="https://github.com/amandalemette/EQM2109/blob/2ceb3310446b09e8e0a8d406bb4224d998c2a416/Turma_2021.2/Francisco/eq2_6789.png?raw=true" /><center> 
  
 A modelagem da polimerização do estireno foi realizada em Python 3. Para a criação e manipulação de vetores, construção dos gráficos e integração e resolução das equações diferenciais ordinárias foi usado, respectivamente, as bibliotecas numpy, pyplot e odeint.
 
@@ -51,7 +55,7 @@ Neste trabalho é realizado a polimerização do estireno por meio da operação
 Como se pode observar, na Figura 3 ao lado, o reator recebe 3 fluxos de alimentação: monômero de estireno, iniciador azobisisobutironitrila (AIBN) e o solvente benzeno. A saída do reator consiste na mistura final com a produção do poliestireno e dos monômeros não reagidos, iniciador e solvente. 
 Para o controle de temperatura, é utilizado uma camisa de fluido frio que também tem o fluxo de entrada e temperatura controlados. 
 
-<center><img src="https://github.com/amandalemette/EQM2109/blob/d4bac670a6ce3b9506f0b2bcda6cb5782a65aaa6/Turma_2021.2/Francisco/figura2.png?raw=true" width=330 height=380 /><center>
+<center><img src="https://github.com/amandalemette/EQM2109/blob/d4bac670a6ce3b9506f0b2bcda6cb5782a65aaa6/Turma_2021.2/Francisco/figura2.png?raw=true" align="center" width=400 height=400 /><center>
  
 Foi realizada a polimerização do estireno por meio da operação contínua em um reator de tanque agitado contínuo (CSTR). Por ser uma reação exotérmica, a temperatura do meio aumenta relação a temperatura inicial de entrada e, em razão do aumento da massa molar média das moléculas, há um aumento da viscosidade. Esses parâmetros serão analisados, uma vez que, influem de modo substancial nas características finais do produto.
  
@@ -63,13 +67,15 @@ Para o controle de temperatura, é utilizado uma camisa de fluido frio que tamb�
 
 A cinética e o mecanismo de reações de polimerização podem ser escritos pelas seguintes etapas:
 
-<center><img src="https://github.com/amandalemette/EQM2109/blob/d4bac670a6ce3b9506f0b2bcda6cb5782a65aaa6/Turma_2021.2/Francisco/reacoes.png?raw=true" width=600 height=300 /><center>
+<center><img src="https://github.com/amandalemette/EQM2109/blob/d4bac670a6ce3b9506f0b2bcda6cb5782a65aaa6/Turma_2021.2/Francisco/reacoes.png?raw=true"  /><center>
     
 ## Modelo cinético
 
 Para o modelo cinético é necessário levar em conta as seguintes considerações:
 
 •	Considerando que os radicais são altamente reativos e, consequentemente, o tempo de vida é extremamente curto. Então, é possível considerar que a concentração dessas substâncias não varia com o tempo e, portanto, aplica-se a aproximação de quase estado (QSSA) para R e Pn;
+ 
+<center><img src="https://github.com/amandalemette/EQM2109/blob/2ceb3310446b09e8e0a8d406bb4224d998c2a416/Turma_2021.2/Francisco/eq2_1011.png?raw=true" /><center>
 
 •	O consumo de monômero é feito majoritariamente pela propagação;
 
@@ -83,15 +89,15 @@ Para o modelo cinético é necessário levar em conta as seguintes consideraçõ
 
 •	O calor liberado na iniciação e terminação são insignificantes em comparação ao calor liberado na propagação.
 
-<center><img src="https://github.com/amandalemette/EQM2109/blob/d4bac670a6ce3b9506f0b2bcda6cb5782a65aaa6/Turma_2021.2/Francisco/modelocinetico1.png?raw=true" width=600 height=400 /><center>
+<center><img src="https://github.com/amandalemette/EQM2109/blob/2ceb3310446b09e8e0a8d406bb4224d998c2a416/Turma_2021.2/Francisco/eq2_12131415.png?raw=true"  /><center>
 
 onde,
   
-<center><img src="https://github.com/amandalemette/EQM2109/blob/d4bac670a6ce3b9506f0b2bcda6cb5782a65aaa6/Turma_2021.2/Francisco/modelocinetico2.png?raw=true" width=400 height=400 /><center>
+<center><img src="https://github.com/amandalemette/EQM2109/blob/2ceb3310446b09e8e0a8d406bb4224d998c2a416/Turma_2021.2/Francisco/eq2_161718.png?raw=true"  /><center>
 
 finalmente,
   
-<center><img src="https://github.com/amandalemette/EQM2109/blob/d4bac670a6ce3b9506f0b2bcda6cb5782a65aaa6/Turma_2021.2/Francisco/modelocinetico3.png?raw=true" width=600 height=300 /><center>
+<center><img src="https://github.com/amandalemette/EQM2109/blob/2ceb3310446b09e8e0a8d406bb4224d998c2a416/Turma_2021.2/Francisco/eq2_192021.png?raw=true" /><center>
   
 ## Efeito Gel
 
@@ -101,8 +107,7 @@ Essencialmente, ocorre a diminuição da mobilidade das cadeias vivas, diminuind
  
 O efeito gel é qualificado matematicamente a diminuição da constante cinética de terminação em razão pela diminuição da mobilidade das moléculas de polímero vivo e, portanto, favorecendo a reação de propagação. Para o poliestireno, as fórmulas abaixo representam esse efeito, considerando a conversão (X). Demais constantes estão presentes em anexo.
 
-
-<center><img src="https://github.com/amandalemette/EQM2109/blob/d4bac670a6ce3b9506f0b2bcda6cb5782a65aaa6/Turma_2021.2/Francisco/efeitogel.png?raw=true" width=500 height=400 /><center>
+<center><img src="https://github.com/amandalemette/EQM2109/blob/2ceb3310446b09e8e0a8d406bb4224d998c2a416/Turma_2021.2/Francisco/eq2_2223242526.png?raw=true" /><center>
   
 # Resultados
  
@@ -114,19 +119,17 @@ Como o artigo de Alvarez e Odloak (2011) realiza o controle por um sistema de ot
  
 No primeiro caso, apresentado na figura abaixo, está a viscosidade do meio. A direita está o gráfico produzido pelo artigo e a esquerda o gráfico produzido nesta tarefa.
 
- 
- 
+<center><img src="https://github.com/amandalemette/EQM2109/blob/2ceb3310446b09e8e0a8d406bb4224d998c2a416/Turma_2021.2/Francisco/figura3.png?raw=true" /><center> 
  
 Pode-se observar que os valores iniciais perto de 3,9 Pa/(cdot s) em ambos os casos seguido do decrescimento dos valores. Após um período não é possível comparar os gráficos pois o controlador atua no sistema o meio evitando que a viscosidade passe de 3,5 Pa/(cdot s), o que ocorreria sem controle. O aumento de viscosidade é um sinal de que está ocorrendo um aumento da massa molar média das cadeias poliméricas do meio, sendo uma maneira indireta de medi-la. 
  
 Para a temperatura do reator, assim como para a viscosidade, ocorre um comportamento semelhante no começo da simulação com um aumento gradual da temperatura que no caso deste trabalho continua sem a interferência do controlador e passa levemente de 330 K.
 
-
- 
- 
- 
+<center><img src="https://github.com/amandalemette/EQM2109/blob/2ceb3310446b09e8e0a8d406bb4224d998c2a416/Turma_2021.2/Francisco/figura4.png?raw=true" /><center> 
  
 No caso da produtividade, a discrepância foi um pouco maior apesar de reproduzir o mesmo comportamento no intervalo inicial. Pode-se observar que a produtividade está diretamente relacionada com a temperatura do reator, uma vez que quanto maior a taxa de propagação do polímero maior quantidade de energia é liberada dado que a reação é exotermica.
+ 
+<center><img src="https://github.com/amandalemette/EQM2109/blob/2ceb3310446b09e8e0a8d406bb4224d998c2a416/Turma_2021.2/Francisco/figura5.png?raw=true" /><center> 
  
 ## Situação 2: Comparação dos resultados acrescentando o efeito gel
  
@@ -134,23 +137,23 @@ Alvarez e Odloak (2011) relatam que o efeito gel é minimizado pelo modo em que 
  
 No primeiro caso, está a viscosidade do meio. A esquerda o gráfico anteriormente produzido e a direita o gráfico aplicando o efeito gel.
 
-
+<center><img src="https://github.com/amandalemette/EQM2109/blob/2ceb3310446b09e8e0a8d406bb4224d998c2a416/Turma_2021.2/Francisco/figura6.png?raw=true" /><center>
  
 Pode-se observar que para a modelagem considerando o efeito gel a viscosidade do meio é muito mais alta. Isso ocorre em razão do aumento da taxa de polimerização (aumento da massa molar média numérica) e, consequentemente, da desaceleração da reação de terminação uma vez que a mobilidade dos polímeros diminui.
  
-Como a reação de propagação é favorecida, a temperatura do reator tente a aumentar mais, e isso pode ser observado nas imagens abaixo. A esquerda o gráfico anteriormente produzido e a direita o gráfico aplicando o efeito gel.
-
+Como a reação de propagação é favorecida, a temperatura do reator tente a aumentar mais, e isso pode ser observado nas imagens abaixo. A esquerda o gráfico anteriormente produzido e a direita o gráfico aplicando o efeito gel. 
  
- 
- 
+<center><img src="https://github.com/amandalemette/EQM2109/blob/2ceb3310446b09e8e0a8d406bb4224d998c2a416/Turma_2021.2/Francisco/figura7.png?raw=true" /><center>
  
 A produtividade está diretamente relacionada com a temperatura do reator, uma vez que quanto maior a taxa de propagação do polímero maior quantidade de energia é liberada dado que a reação é exotermica. No segundo caso, a produtividade quando alcança o regime transiente é aproximadamente 12x maior que no primeiro caso.
 
- 
- 
+<center><img src="https://github.com/amandalemette/EQM2109/blob/2ceb3310446b09e8e0a8d406bb4224d998c2a416/Turma_2021.2/Francisco/figura8.png?raw=true" /><center>
  
 Para entender melhor a produtividade do reator, podemos observar a conversão de todo monômero que entra no reator. O valor em regime transiente no primeiro modelo é de 62,81% e no modelo considerando o efeito gel 71,56%. Essa diferença de aproximadamente 9,75% justifica, em parte, a maior produtividade.
+ 
 
+<center><img src="https://github.com/amandalemette/EQM2109/blob/2ceb3310446b09e8e0a8d406bb4224d998c2a416/Turma_2021.2/Francisco/figura9.png?raw=true" /><center>
+ 
 # Conclusões 
 
 No primeiro caso de replicação dos resultados do artigo em Python é possível concluir que a polimerização se comporta da forma semelhante. Como os resultados do artigo se somam ao controle do processo, não é possível comparar de forma integral.
