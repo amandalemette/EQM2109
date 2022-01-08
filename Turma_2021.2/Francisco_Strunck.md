@@ -10,9 +10,9 @@ Os polímeros têm um lugar de destaque em várias áreas, tais como: farmacêut
 
 Os polímeros podem ser inorgânicos ou orgânicos, naturais ou sintéticos. Os polímeros sintéticos orgânicos são, basicamente, formados por hidrocarbonetos insaturados, derivados do petróleo. A reação de polimerização que dá origem a esses materiais, em geral, é classificada em dois tipos: condensação e adição. Na reação por condensação, cada etapa do processo é acompanhada pela formação da molécula de uma substância simples, geralmente a água. Na polimerização por adição, os monômeros reagem para produzir um polímero, sem formar subprodutos [1].
 
-O estireno é um monômero líquido, incolor e oleoso. Matéria-prima para diversos processos da indústria química tendo a principal aplicação na formação do poliestireno, uma resina do grupo dos termoplásticos, cuja característica reside na flexibilidade sob ação do calor e resistência quando resfriado. As aplicações deste polímero são diversas: eletrodomésticos, construção civil, embalagens, emulsões, borrachas, dentre outras. 
+O estireno é um monômero líquido, incolor e oleoso. Matéria-prima para diversos processos da indústria química tendo a principal aplicação na formação do poliestireno, uma resina do grupo dos termoplásticos, cuja característica reside na flexibilidade sob ação do calor e resistência quando resfriado. As aplicações deste polímero são diversas: eletrodomésticos, construção civil, embalagens, emulsões, borrachas, dentre outras [6]. 
 
-Particularmente, o poliestireno é formado por reação adição dos monômeros do estireno (Figura 1). O polímero tem destinação principalmente para elastômeros, resinas e poliestireno expandido. O estireno é majoritariamente obtido a partir do etilbenzeno extraído do petróleo. Durante o ano de 2020, o mercado de poliestireno sofreu uma queda de 7 % em função da pandemia. Neste ano o mercado movimentava mais de 30 bilhões de dólares e com projeção de crescimento de 4% ao ano até 2026, uma vez que países asiáticos continuam a construir novas plantas de produção. [8].
+Particularmente, o poliestireno é formado por reação adição dos monômeros do estireno (Figura 1). O polímero tem destinação principalmente para elastômeros, resinas e poliestireno expandido. O estireno é majoritariamente obtido a partir do etilbenzeno extraído do petróleo [6]. Durante o ano de 2020, o mercado de poliestireno sofreu uma queda de 7 % em função da pandemia. Neste ano o mercado movimentava mais de 30 bilhões de dólares e com projeção de crescimento de 4% ao ano até 2026, uma vez que países asiáticos continuam a construir novas plantas de produção. [5].
 
 <center><img src="https://github.com/amandalemette/EQM2109/blob/cf5536e05e532ad7b46bd3fce0c2b97325fc0d36/Turma_2021.2/Francisco/Figura%201.png?raw=true"  width=600 height=250 /><center>
  
@@ -29,7 +29,7 @@ Portanto, o objetivo deste trabalho é modelar e simular a polimerização do es
 
 Foi realizada a simulação da polimerização do estireno em um reator CSTR no Python pelo método dos momentos utilizando os parâmetros e dados termodinâmicos do Alvarez e Odloak (2011) e, posteriormente, adicionado e efeito gel utilizando os dados fornecidos por Hui et al. (1972), de modo que seja possível comparar os dados dos artigos com os dados obtidos por esse trabalho.
  
-A modelagem matemática é a parte principal deste trabalho. O método dos momentos é uma abordagem determinística onde são contabilizadas as propriedades médias do sistema por meio de um cálculo estatístico da população de polímeros vivos e polímeros mortos. Ao invés de realizar a reação molécula por molécula e ir armazenado essa informação de progressão da reação, como outros métodos realizam, o método dos momentos reduz de forma bastante elevada o processamento computacional por meio de um cálculo estatístico.
+A modelagem matemática é a parte principal deste trabalho. O método dos momentos é uma abordagem determinística onde são contabilizadas as propriedades médias do sistema por meio de um cálculo estatístico da população de polímeros vivos e polímeros mortos. Ao invés de realizar a reação molécula por molécula e ir armazenado essa informação de progressão da reação, como outros métodos realizam, o método dos momentos reduz de forma bastante elevada o processamento computacional por meio de um cálculo estatístico [2].
 
  De modo objetivo, este método pode ser descrito pelas Equações 2.1 e 2.2. A variável i é o comprimento de uma cadeia de polímero (número de unidades monoméricas), P é a concentração molar de cadeia viva e L é a concentração molar de cadeia morta. 
 
@@ -51,7 +51,8 @@ A modelagem da polimerização do estireno foi realizada em Python 3. Para a cri
 
 ## Descrição do reator
 
-Neste trabalho é realizado a polimerização do estireno por meio da operação contínua em um reator CSTR. Por ser uma reação exotérmica, o reator aumenta de temperatura em relação a temperatura inicial de entrada e, em razão do aumento da massa molar média das moléculas, um aumento da viscosidade. Esses parâmetros serão analisados uma vez que influem de modo substancial nas características finais do produto.
+Neste trabalho é realizado a polimerização do estireno por meio da operação contínua em um reator CSTR. Por ser uma reação exotérmica, o reator aumenta de temperatura em relação a temperatura inicial de entrada e, em razão do aumento da massa molar média das moléculas, um aumento da viscosidade. Esses parâmetros serão analisados uma vez que influem de modo substancial nas características finais do produto [2].
+ 
 Como se pode observar, na Figura 3 ao lado, o reator recebe 3 fluxos de alimentação: monômero de estireno, iniciador azobisisobutironitrila (AIBN) e o solvente benzeno. A saída do reator consiste na mistura final com a produção do poliestireno e dos monômeros não reagidos, iniciador e solvente. 
 Para o controle de temperatura, é utilizado uma camisa de fluido frio que também tem o fluxo de entrada e temperatura controlados. 
 
@@ -101,7 +102,7 @@ finalmente,
   
 ## Efeito Gel
 
-O efeito gel é um fenômeno cinético que ocorre durante a realização da polimerização e está relacionada com o aumento de viscosidade do meio reacional decorrente do aumento do aumento da massa molar média das moléculas presentes no meio.
+O efeito gel é um fenômeno cinético que ocorre durante a realização da polimerização e está relacionada com o aumento de viscosidade do meio reacional decorrente do aumento do aumento da massa molar média das moléculas presentes no meio [7].
  
 Essencialmente, ocorre a diminuição da mobilidade das cadeias vivas, diminuindo a velocidade de terminação de cadeia. Este fenômeno afeta fortemente as propriedades finais do polímero aumentando a massa molar média numérica (Mn), massa molar média ponderal (Mw), dispersividade (D) e temperatura do reator.
  
@@ -167,34 +168,22 @@ Adicionando as mudanças na simulação para aplicar o efeito gel na polimeriza�
  
 [2] Vinay Prasada, Matthias Schleyb, Louis P. Russoc, B. Wayne Bequettea. Product property and production rate control of styrene polymerization, Journal of Process Control, vol. 12, 353 – 372, 2002.
  
-[3] Mariano Asteasuain, Alberto Bandoni, Claudia Sarmoria, Adriana Brandolin, Simultaneous process and control system design for grade transition in styrene polymerization, Chemical Engineering Science, vol. 61, 3362 – 3378, 2006.
+[3] L. A. Alvarez and D. Od, Optimization and Control of a Continuous Polymerization Reactor, Brazilian Journal of Chemical Engineering, vol. 29, no. 04,807 - 820, 2012.
  
-[4] H. Bouhenchir, M. Cabassud, M.V. Le Lann, Predictive functional control for the temperature control of a chemical batch reactor, Computers and Chemical Engineering, vol. 30, 1141 – 1154, 2006.
- 
-[5] Nayef Mohamed Ghasem, Suhairi Abdul Sata, Mohamed Azlan Hussain, Temperature Control of a Bench-Scale Batch Polymerization Reactor for Polystyrene Production, Chemical Engineering Technology, vol. 30, 1193 – 1202, 2007.
- 
-[6] L. A. Alvarez* and D. Od, Optimization and Control of a Continuous Polymerization Reactor, Brazilian Journal of Chemical Engineering, vol. 29, no. 04,807 - 820, 2012.
- 
-[7] Abdelkarim M. Ertiame, Dingli Yu, Feng Yu & J.B. Gomm, Robust fault diagnosis for an exothermic semibatch polymerization reactor under open-loop, vol. 3, 14 – 23, 2015.
- 
-[8] Mordon Intelligence, POLYSTYRENE MARKET - GROWTH, TRENDS, COVID-19 IMPACT, AND FORECASTS (2021 - 2026), https://www.mordorintelligence.com/industry-reports/polystyrene-market. Acessado em: 27/12/2021.
- 
-[9] Yuyun Zeng, Jingquan Liu, Kaichao Sun, Lin-wen Hu. Machine learning based system performance prediction model for reactor control, Annals of Nuclear Energy, vol. 113, 270-278, 2018.
- 
-[10] - Expert Market Research, Reports. Disponível em: https://www.expertmarketresearch.com/reports /polystyrene-market. Acesso em: 09/12/2021
+[4] - Hui,A.W.; Hamielec, A.E. Thermal polymerization of styrene at high conversions and temperatures. An experimental study. J.Applied Poly. Science 16, 749, 1972.
 
-[11] - Ceresana, Polystyrene Market Report. Disponível em: https://www.ceresana.com/en/market-studies/plastics/polystyrene/. Acesso em: 09/12/2021
-
-[12] - Hui,A.W.; Hamielec, A.E. Thermal polymerization of styrene at high conversions and temperatures. An experimental study. J.Applied Poly. Science 16, 749, 1972.
-
-[13] – Alvarez L. A.; Odloak D., OPTIMIZATION AND CONTROL OF A CONTINUOUS POLYMERIZATION REACTOR. Brazilian Journal of Chemical Engineering, Vol. 29, No. 04, pp. 807 - 820, October - December, 2012
+[5] Mordon Intelligence, Polystyrene Market – Growth, Trends, Covid-19 Impact, and Forecasts (2021-206), https://www.mordorintelligence.com/industry-reports/polystyrene-market. Acessado em: 27/12/2021.
+ 
+[6] R. R. Miller, R. Newhook, A. Poolec, Styrene Production, Use, and Human Exposure, Critical Reviews in Toxicology, vol.25, 1-10, 1994.
+ 
+[7] W. Y. Chiu, G. M. Carratt, D. S. Soong, A Computer Model for the Gel Effect in Free-Radical Polymerization, Department of Chemical Engineering, University of California, Berkeley, vol. 16, 348-357, 1983.
 
 # Anexo
   
 Tabela 1: Parâmetros do processo para o reator de polimerização
   
-<center><img src="https://github.com/amandalemette/EQM2109/blob/d4bac670a6ce3b9506f0b2bcda6cb5782a65aaa6/Turma_2021.2/Francisco/anexo1.png?raw=true" width=800 height=300 /><center>
+<center><img src="https://github.com/amandalemette/EQM2109/blob/d4bac670a6ce3b9506f0b2bcda6cb5782a65aaa6/Turma_2021.2/Francisco/anexo1.png?raw=true" /><center>
 
 Tabela 2: Condição operacional de estado estacionário para o reator de polimerização
 
-<center><img src="https://github.com/amandalemette/EQM2109/blob/d4bac670a6ce3b9506f0b2bcda6cb5782a65aaa6/Turma_2021.2/Francisco/anexo2.png?raw=true"  width=800 height=300 /><center>
+<center><img src="https://github.com/amandalemette/EQM2109/blob/d4bac670a6ce3b9506f0b2bcda6cb5782a65aaa6/Turma_2021.2/Francisco/anexo2.png?raw=true" /><center>
