@@ -11,10 +11,7 @@ elasto-viscoplasticidade de Boyce. Porém o foco deste trabalho está na compara
 
 
 # Introdução
-No artigo proposto foi analisado o comportamento do PEAD submetido ao carregamento e descarregamento a diferentes taxas de deformação. Foram realizados também ensaios de fluência
-e relaxação a diferentes tensões e níveis de deformação. Os resultados experimentais foram então simulados utilizando a VBS e o modelo de Boyce à fim de comparar as duas
-metodologias para a modelagem do comportamento do PEAD. Porém, neste trabalho foi utilizada somente a VBS para a modelagem do ensaio de tração uniaxial (carregamento 
-e descarregamento).
+No artigo proposto foi analisado o comportamento do polietileno de alta densidade (PEAD) submetido ao carregamento e descarregamento a diferentes taxas de deformação. Foram realizados também ensaios de fluência e relaxação a diferentes tensões e níveis de deformação. Os resultados experimentais foram então simulados utilizando a teoria da viscoplasticidade baseada em sobretensão (VBS) e o modelo de Boyce à fim de comparar as duas metodologias para a modelagem do comportamento do PEAD. Porém, neste trabalho foi utilizada somente a VBS para a modelagem do ensaio de tração uniaxial (carregamento e descarregamento).
 
 # Metodologia
 
