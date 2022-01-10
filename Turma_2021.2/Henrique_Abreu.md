@@ -5,12 +5,13 @@ Professora Amanda Lemette
 Aluno: Henrique Abreu
 
 # Resumo
-O artigo "High density polyethylene (HDPE): Experiments and modeling" compara resultados de ensaios mecânicos realizados em corpos de prova de polietileno de alta densidade (PEAD)
-a resultados da simulação utilizando a teoria da viscoplasticidade baseada em sobretensão (VBS). O artigo também compara os resultados experimentais a modelos de 
-elasto-viscoplasticidade de Boyce. Porém o foco deste trabalho está na comparação dos resultados experimentais aos resultados utilizando a VBS.
-
+O artigo "High density polyethylene (HDPE): Experiments and modeling" compara resultados de ensaios mecânicos realizados em corpos de prova de polietileno de alta densidade (PEAD) a resultados da simulação utilizando a teoria da viscoplasticidade baseada em sobretensão (VBS). O artigo também compara os resultados experimentais ao modelo de elasto-viscoplasticidade de Boyce. Porém o foco deste trabalho está na comparação dos resultados experimentais aos resultados utilizando a VBS.
 
 # Introdução
+Os materiais poliméricos não apresentam um comportamento mecânico linearmente dependente do tempo e da temperatura ao serem submetidos à ensaios mecânicos. Foram portanto desenvolvidas equações, chamadas equações constitutivas, à fim de descrever isoladamente alguns dos comportamentos mecânicos dos materiais poliméricos. A partir das equações constitutivas foram desenvolvidos os modelos constitutivos, que buscam explicar a complexidade do comportamento mecânico dos polímeros ao serem submetidos a diferentes condições de carregamento e descarregamento.
+
+Os modelos constitutivos podem ser divididos entre as duas principais abordagens para descrever o comportamento mecânico dos materiais poliméricos; as abordagens micro e macro-mecânicas.
+
 No artigo proposto foi analisado o comportamento do polietileno de alta densidade (PEAD) submetido ao carregamento e descarregamento a diferentes taxas de deformação. Foram realizados também ensaios de fluência e relaxação a diferentes tensões e níveis de deformação. Os resultados experimentais foram então simulados utilizando a teoria da viscoplasticidade baseada em sobretensão (VBS) e o modelo de Boyce à fim de comparar as duas metodologias para a modelagem do comportamento do PEAD. Porém, neste trabalho foi utilizada somente a VBS para a modelagem do ensaio de tração uniaxial (carregamento e descarregamento).
 
 # Metodologia
@@ -55,7 +56,7 @@ Estas equações permitem que o modelo VBS (equação 14) forneça a taxa de def
              
 # Resultados e Discussões
 
-Pela função de escoamento do modelo VBO pôde-se obter uma curva próxima à experimental para a região elástica. Porém o modelo obtido não tem a linearidade esperada nesta região
+Pela função de escoamento do modelo VBS pôde-se obter uma curva próxima à experimental para a região elástica. Porém o modelo obtido não tem a linearidade esperada nesta região
 do gráfico.
 
 <center><img src="https://github.com/amandalemette/EQM2109/blob/51c2bd8f3b6e12fbd5651253b83a604168712587/Turma_2021.2/Henrique_Abreu/Imagens/modelo_escoamento.png"
