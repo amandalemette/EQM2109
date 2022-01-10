@@ -6,19 +6,19 @@ Aluno: Henrique Abreu
 
 # Resumo
 O artigo "High density polyethylene (HDPE): Experiments and modeling" compara resultados de ensaios mecânicos realizados em corpos de prova de polietileno de alta densidade (PEAD)
-a resultados da simulação utilizando a Teoria da Viscoplasticidade baseada em Sobretensão (VBO). O artigo também compara os resultados experimentais a modelos de 
-elasto-viscoplasticidade de Boyce. Porém o foco deste trabalho está na comparação dos resultados experimentais aos resultados utilizando a VBO.
+a resultados da simulação utilizando a teoria da viscoplasticidade baseada em sobretensão (VBS). O artigo também compara os resultados experimentais a modelos de 
+elasto-viscoplasticidade de Boyce. Porém o foco deste trabalho está na comparação dos resultados experimentais aos resultados utilizando a VBS.
 
 
 # Introdução
 No artigo proposto foi analisado o comportamento do PEAD submetido ao carregamento e descarregamento a diferentes taxas de deformação. Foram realizados também ensaios de fluência
-e relaxação a diferentes tensões e níveis de deformação. Os resultados experimentais foram então simulados utilizando a VBO e o modelo de Boyce à fim de comparar as duas
+e relaxação a diferentes tensões e níveis de deformação. Os resultados experimentais foram então simulados utilizando a VBS e o modelo de Boyce à fim de comparar as duas
 metodologias para a modelagem do comportamento do PEAD. Porém, neste trabalho foi utilizada somente a VBO para a modelagem do ensaio de tração uniaxial (carregamento 
 e descarregamento).
 
 # Metodologia
 
-A figura 3 do artigo apresenta a relação entre tensão e deformação para o PEAD. É dada a relação experimental e predita pelo modelo VBO para três taxas de deformação diferentes.
+A figura 3 do artigo apresenta a relação entre tensão e deformação para o PEAD. É dada a relação experimental e predita pelo modelo VBS para três taxas de deformação diferentes.
 Por meio do software GetData Graph Digitizer, foram extraídos os dados experimentais para a curva da taxa de deformação igual a 0,001 [1/s]. Os dados foram salvos no arquivo
 serie1.txt e posteriormente armazenados em um dataframe (df0) no Python.
 
@@ -54,7 +54,7 @@ As condições de contorno foram dadas pelo artigo na tabela 1:
 
 <center><img src="https://github.com/amandalemette/EQM2109/blob/51c2bd8f3b6e12fbd5651253b83a604168712587/Turma_2021.2/Henrique_Abreu/Imagens/chart.png"
 
-Estas equações permitem que o modelo VBO (equação 14) forneça a taxa de deformação para diferentes tensões. Deste modo, utilizou-se as tensões experimentais para obter as deformações a partir do modelo VBO.
+Estas equações permitem que o modelo VBS (equação 14) forneça a taxa de deformação para diferentes tensões. Deste modo, utilizou-se as tensões experimentais para obter as deformações a partir do modelo VBS.
              
 # Resultados e Discussões
 
@@ -85,7 +85,7 @@ Foram realizadas outras tentativas para diferentes valores de g sem que houve um
 
 # Conclusões
 
-Pôde-se obter um modelo aproximado para a deformação na região elástica da curva tensão-deformação. Porém não foi possível utilizar o modelo VBO corretamente para chegar a uma
+Pôde-se obter um modelo aproximado para a deformação na região elástica da curva tensão-deformação. Porém não foi possível utilizar o modelo VBS corretamente para chegar a uma
 aproximação para as regiões inelástica e de descarregamento dos resultados experimentais.
              
 # Referências
