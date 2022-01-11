@@ -104,7 +104,11 @@ Para g = 14, obtém-se o seguinte gráfico:
              
 <center><img src="https://github.com/amandalemette/EQM2109/blob/cb2ef9a6ade1cec390bb8c618fa0de24a7ae4643/Turma_2021.2/Henrique_Abreu/Imagens/g_14.png"             
              
-Foram realizadas outras tentativas para diferentes valores da tensão desviadora de equilíbrio sem que houvesse uma melhor aproximação do modelo, portanto é necessário um estudo mais aprofundado das equações constitutivas do modelo VBS. 
+Foram realizadas outras tentativas para diferentes valores da tensão desviadora de equilíbrio sem que houvesse uma melhor aproximação do modelo. Pôde-se obervar que tal qual ocorre para o modelo de Boyce et al. (2000), o artigo não apresenta todos os parâmetros necessários para o cálculo das equações constitutivas, tampouco pôde-se encontrar os valores para os parâmetros ausentes em outros artigos pesquisados. Os parâmetros com valores ausentes são os seguintes:
+             - s -> tensão desviante de Cauchy;
+             - g -> tensão desviante de equilíbrio;
+             - k -> tensão desviante cinemática;
+             - K -> tensão cinemática.
 
 # Conclusões
 
