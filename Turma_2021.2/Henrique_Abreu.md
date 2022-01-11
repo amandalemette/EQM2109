@@ -98,7 +98,7 @@ Ao adicionar o parâmetro C para compor o modelo VBS, não pôde-se obter um res
              
 <center><img src="https://github.com/amandalemette/EQM2109/blob/017a03d2cd677afe384555feb72785ba5f40e8eb/Turma_2021.2/Henrique_Abreu/Imagens/modelo_load-unload.png"
              
-No entanto, pôde-se observar que a tensão desviadora de equilíbrio (equação 5) tem bastante influência no modelo, a curva do gráfico acima foi obtida para g = 6.  
+No entanto, pôde-se observar que a tensão desviante de equilíbrio (g) tem bastante influência no modelo, a curva do gráfico acima foi obtida para g = 6.  
              
 Para g = 14, obtém-se o seguinte gráfico:
              
