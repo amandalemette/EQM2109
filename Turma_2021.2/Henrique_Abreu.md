@@ -104,12 +104,12 @@ Para g = 14, obtém-se o seguinte gráfico:
              
 <center><img src="https://github.com/amandalemette/EQM2109/blob/cb2ef9a6ade1cec390bb8c618fa0de24a7ae4643/Turma_2021.2/Henrique_Abreu/Imagens/g_14.png"             
              
-Foram realizadas outras tentativas para diferentes valores de g sem que houvesse uma melhor aproximação do modelo, portanto é necessário um estudo mais aprofundado deste e de outros parâmetros apontados no artigo. 
+Foram realizadas outras tentativas para diferentes valores da tensão desviadora de equilíbrio sem que houvesse uma melhor aproximação do modelo, portanto é necessário um estudo mais aprofundado das equações constitutivas do modelo VBS. 
 
 # Conclusões
 
-Pôde-se obter um modelo aproximado para a deformação na região elástica da curva tensão-deformação. Porém não foi possível utilizar o modelo VBS corretamente para chegar a uma
-aproximação para as regiões inelástica e de descarregamento dos resultados experimentais.
+Pôde-se obter um modelo que se aproxima do resultado experimental na região elástica da curva tensão-deformação resultante do ensaio de tração em um corpo de prova de PEAD, porém o modelo não foi capaz de replicar a linearidade característica da região elástica.
+Não foi possível replicar o modelo VBS corretamente para obter uma aproximação para as regiões plástica e de descarregamento dos resultados experimentais.
              
 # Referências
              
