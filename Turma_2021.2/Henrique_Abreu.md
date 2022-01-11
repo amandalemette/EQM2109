@@ -70,37 +70,41 @@ As condições de contorno foram dadas pelo artigo na tabela 1:
 
 <center><img src="https://github.com/amandalemette/EQM2109/blob/51c2bd8f3b6e12fbd5651253b83a604168712587/Turma_2021.2/Henrique_Abreu/Imagens/chart.png"
 
-Estas equações constitutivas (equações 2-8) permitem que o modelo VBS (equação 1) forneça a  deformação para diferentes tensões. Deste modo, as equações constitutivas foram escritas em Python à fim de replicar o modelo VBS. Por fim, utilizou-se as tensões experimentais, armazenadas no dataframe df0, para se obter as deformações a partir da réplica do modelo VBS criada no Python.
+Estas equações constitutivas (equações 2-8) permitem que o modelo VBS (equação 1) forneça a  deformação para diferentes tensões. Deste modo, as equações constitutivas foram escritas em Python à fim de replicar o modelo VBS. Por fim, utilizou-se as tensões experimentais, armazenadas nos dataframes df0 e df1, para se obter as deformações a partir da réplica do modelo VBS criada no Python.
              
 ## Relaxamento de tensão e Fluência
              
 O artigo proposto apresenta resultados experimentais para testes de relaxamento de tensão e de fluência. No relaxamento de tensão, a tensão que mantém o corpo de prova deformado a um determinado nível, tende a diminuir ao longo do tempo (figura 3). Na fluência, a deformação do corpo de prova submetido a uma determinada tensão tende a aumentar ao longo do tempo (figura 4). É possivel observar na figura 4 que o artigo simula os resultados para fluência do PEAD utilizando o modelo VBS, porém por não haver no artigo a indicação dos parâmetros utilizados para realizar esta simulação, não foi possível reproduzir a simulação da fluência para o PEAD neste trabalho.
+      
+Figura 3:             
+<center><img src="https://github.com/amandalemette/EQM2109/blob/75545c26c37f3bb172231d69e4ab1047085ff5b7/Turma_2021.2/Henrique_Abreu/Imagens/relaxation.png"
+             
+Figura 4:
+<center><img src="https://github.com/amandalemette/EQM2109/blob/75545c26c37f3bb172231d69e4ab1047085ff5b7/Turma_2021.2/Henrique_Abreu/Imagens/creep.png"             
              
 # Resultados e Discussões
              
-Pela função de escoamento do modelo VBS replicado em Python, pôde-se obter uma curva próxima à experimental na região elástica, região a qual a curva de escoamento é linear. Porém o modelo obtido não apresentou a linearidade característica desta região do gráfico.
+Pela função de escoamento (equação 2) do modelo VBS replicado em Python, pôde-se obter uma curva próxima à experimental na região elástica, região a qual a curva de escoamento é linear. Porém o modelo obtido não apresentou a linearidade característica desta região do gráfico. Era esperado que o resultado para um modelo utilizando somente uma equação constitutiva não representasse exatamente os resultados experimentais, uma vez que modelos constitutivos como o VBS são formados por uma série de euqações constitutivas.
 
 <center><img src="https://github.com/amandalemette/EQM2109/blob/51c2bd8f3b6e12fbd5651253b83a604168712587/Turma_2021.2/Henrique_Abreu/Imagens/modelo_escoamento.png"
              
-O gráfico abaixo considera também a região de descarregamento do material, ou seja, . Como visto no gráfico, a função de escoamento somente se aproxima da região elástica, o artigo aponta que para modelar a região de descarregamento é preciso considerar o parâmetro C.
+O gráfico abaixo considera também os dados experimentais da região de descarregamento do material. Comparando o gráfico abaixo ao anterior, a função de escoamento (equação 2) passa a ser ainda menos representativa do comportamento mecânico do PEAD.
              
 <center><img src="https://github.com/amandalemette/EQM2109/blob/51c2bd8f3b6e12fbd5651253b83a604168712587/Turma_2021.2/Henrique_Abreu/Imagens/modelo_escoamento_load.png"
+
+O modelo VBS aponta que para modelar a região de descarregamento, é preciso considerar o parâmetro C (equação 3). As demais equações constitutivas (equações 4-8) estão intrinsicamente presentes na equação do parâmetro C.             
              
-Por fim, não houve sucesso na tentativa de utilizar o modelo VBO para obter uma curva próxima à todas as regiões dadas pela curva experimental.
+Ao adicionar o parâmetro C para compor o modelo VBS, não pôde-se obter um resultado razoável. E portanto, não houve sucesso na tentativa de replicar o modelo VBS para obter uma curva próxima à curva experimental nas regiões de carregamento e descarregamento.
              
 <center><img src="https://github.com/amandalemette/EQM2109/blob/017a03d2cd677afe384555feb72785ba5f40e8eb/Turma_2021.2/Henrique_Abreu/Imagens/modelo_load-unload.png"
              
-A tensão desviadora de equilíbrio (g) tem bastante influência no modelo, a curva do gráfico acima foi obtida para g = 6.  
+No entanto, pôde-se observar que a tensão desviadora de equilíbrio (equação 5) tem bastante influência no modelo, a curva do gráfico acima foi obtida para g = 6.  
              
 Para g = 14, obtém-se o seguinte gráfico:
              
 <center><img src="https://github.com/amandalemette/EQM2109/blob/cb2ef9a6ade1cec390bb8c618fa0de24a7ae4643/Turma_2021.2/Henrique_Abreu/Imagens/g_14.png"             
              
-Foram realizadas outras tentativas para diferentes valores de g sem que houve uma melhor aproximação do modelo, portanto é necessário um estudo mais aprofundado deste e de outros parâmetros apontados no artigo, tais como:
-             
-- A taxa de tensão desviadora objetiva;
-- A tensão cinemática;
-- A tensão de equilíbrio (G).
+Foram realizadas outras tentativas para diferentes valores de g sem que houvesse uma melhor aproximação do modelo, portanto é necessário um estudo mais aprofundado deste e de outros parâmetros apontados no artigo. 
 
 # Conclusões
 
