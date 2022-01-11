@@ -18,6 +18,8 @@ No artigo "High density polyethylene (HDPE): Experiments and modeling" foi anali
 
 # Metodologia
 
+## Carregamento e Descarregamento
+
 A figura abaixo (figura 1), extraída do artigo "High density polyethylene (HDPE): Experiments and modeling", apresenta a relação entre tensão e deformação para o PEAD após um ensaio de tração uniaxial. É dada a relação experimental e predita pelo modelo VBS para três taxas de deformação diferentes.
 
 <center><img src="https://github.com/amandalemette/EQM2109/blob/22103b301f68ed48c5c7993a57ce58de59231bee/Turma_2021.2/Henrique_Abreu/Imagens/figura3.png"
@@ -26,7 +28,7 @@ Um ensaio de tração uniaxial é realizado por meio de uma máquina de tensão 
              
 <center><img src="https://github.com/amandalemette/EQM2109/blob/2473f4c8443cd335d3ce2ee4d41e7374db88d38a/Turma_2021.2/Henrique_Abreu/Imagens/tensile_machine.jpg"
              
-             A figura 2 pode ser dividida em três regiões, região elástica (região I), região plástica (região II), e região de descarregamento (região III). A soma das regiões I e II constituem a região de carregamento, ou seja, onde um único eixo do corpo de prova estava submetido a uma carga. Já a região de descarregamento demonstra o comportamento mecânico do corpo de prova ao deixar de ser submetido a mesma carga que ocorria durante o carregamento, para este experimento isto ocorre quando uma deformação de 14% é atingida. Na região elástica (região I) a relação entre tensão e deformação deve ser linear, pois o corpo de prova deve ser capaz de recuperar a sua forma original ao cessar o carregamento. Já na região plástica (região II) percebe-se que não existe mais relação linear entre a tensão e a deformação e portanto o corpo de prova está sofrendo uma deformação permanente. Na região de descarregamento, pode-se perceber que o material recupera ligeiramente a sua forma com a diminuição da tensão, demonstrando que existe elasticidade ainda na região plástica.
+A figura 2 pode ser dividida em três regiões, região elástica (região I), região plástica (região II), e região de descarregamento (região III). A soma das regiões I e II constituem a região de carregamento, ou seja, onde um único eixo do corpo de prova estava submetido a uma carga. Já a região de descarregamento demonstra o comportamento mecânico do corpo de prova ao deixar de ser submetido a mesma carga que ocorria durante o carregamento, para este experimento isto ocorre quando uma deformação de 14% é atingida. Na região elástica (região I) a relação entre tensão e deformação deve ser linear, pois o corpo de prova deve ser capaz de recuperar a sua forma original ao cessar o carregamento. Já na região plástica (região II) percebe-se que não existe mais relação linear entre a tensão e a deformação e portanto o corpo de prova está sofrendo uma deformação permanente. Na região de descarregamento, pode-se perceber que o material recupera ligeiramente a sua forma com a diminuição da tensão, demonstrando que existe elasticidade ainda na região plástica.
              
 <center><img src="https://github.com/amandalemette/EQM2109/blob/eb592a0370b82cb17191247a6ecffbb4b30d0f3d/Turma_2021.2/Henrique_Abreu/Imagens/figura3_elast_plast_unload.png"
 
@@ -69,6 +71,10 @@ As condições de contorno foram dadas pelo artigo na tabela 1:
 <center><img src="https://github.com/amandalemette/EQM2109/blob/51c2bd8f3b6e12fbd5651253b83a604168712587/Turma_2021.2/Henrique_Abreu/Imagens/chart.png"
 
 Estas equações constitutivas (equações 2-8) permitem que o modelo VBS (equação 1) forneça a  deformação para diferentes tensões. Deste modo, as equações constitutivas foram escritas em Python à fim de replicar o modelo VBS. Por fim, utilizou-se as tensões experimentais, armazenadas no dataframe df0, para se obter as deformações a partir da réplica do modelo VBS criada no Python.
+             
+## Relaxamento de tensão e Fluência
+             
+O artigo proposto apresenta resultados experimentais para testes de relaxamento de tensão e de fluência. No relaxamento de tensão, a tensão que mantém o corpo de prova deformado a um determinado nível, tende a diminuir ao longo do tempo (figura 3). Na fluência, a deformação do corpo de prova submetido a uma determinada tensão tende a aumentar ao longo do tempo (figura 4). É possivel observar na figura 4 que o artigo simula os resultados para fluência do PEAD utilizando o modelo VBS, porém por não haver no artigo a indicação dos parâmetros utilizados para realizar esta simulação, não foi possível reproduzir a simulação da fluência para o PEAD neste trabalho.
              
 # Resultados e Discussões
              
