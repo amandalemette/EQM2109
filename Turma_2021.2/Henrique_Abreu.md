@@ -21,34 +21,42 @@ No artigo "High density polyethylene (HDPE): Experiments and modeling" foi anali
 A figura abaixo (figura 1), extraída do artigo "High density polyethylene (HDPE): Experiments and modeling", apresenta a relação entre tensão e deformação para o PEAD. É dada a relação experimental e predita pelo modelo VBS para três taxas de deformação diferentes.
 
 <center><img src="https://github.com/amandalemette/EQM2109/blob/22103b301f68ed48c5c7993a57ce58de59231bee/Turma_2021.2/Henrique_Abreu/Imagens/figura3.png"
+ 
+A figura 1 pode ser dividida em três regiões, região elástica (região I), região plástica (região II), e região de descarregamento (região III). A soma das regiões I e II constituem a região de carregamento, ou seja, onde um único eixo do corpo de prova estava submetido a uma carga. Já a região de descarregamento demonstra o comportamento mecânico do corpo de prova ao deixar de ser submetido a mesma carga que ocorria durante o carregamento. Na região elástica (região I) a relação entre tensão e deformação deve ser linear, pois o corpo de prova deve ser capaz de recuperar a sua forma original ao cessar o carregamento. Já na região plástica (região II) percebe-se que não existe mais relação linear entre a tensão e a deformação e portanto o corpo de prova está sofrendo uma deformação permanente. Na região de descarregamento, pode-se perceber que o material recupera ligeiramente a sua forma com a diminuição da tensão, demonstrando que existe elasticidade ainda na região plástica.
              
-Por meio do software GetData Graph Digitizer, foram extraídos os dados experimentais da curva com taxa de deformação igual a 0,001 [1/s]. Os dados foram salvos no arquivo serie1.txt e posteriormente armazenados em um dataframe (df0) no Python.
+<center><img src="https://github.com/amandalemette/EQM2109/blob/eb592a0370b82cb17191247a6ecffbb4b30d0f3d/Turma_2021.2/Henrique_Abreu/Imagens/figura3_elast_plast_unload.png"
+
+Por meio do software GetData Graph Digitizer, foram extraídos os dados experimentais da curva com taxa de deformação igual a 0,001 [1/s]. Os dados que representam a região de carregamento (região I e II) foram salvos no arquivo serie1_load.txt e posteriormente armazenados em um dataframe (df0) no Python. Já os dados que representam a região de carregamento (região I e II) e descarregamento (região I, II e III) foram salvos no arquivo serie1_load-unload.txt e posteriormente armazenados em um dataframe (df1) no Python.
 
 A definição do modelo VBO é dado abaixo (equação 1):
              
 <center><img src="https://github.com/amandalemette/EQM2109/blob/9d1f5f867d07ddcb0fd70a78941064ab9f67063f/Turma_2021.2/Henrique_Abreu/Imagens/flow_law.png?raw=true"
 
-O parâmetro C utilizado para modelar o comportamento não-linear do descarregamento (equação 2):
+A função de escoamento é dada por (equação 2):
+             
+<center><img src="https://github.com/amandalemette/EQM2109/blob/81b3e0e7eebebd0bee5dd641d494538227d855dd/Turma_2021.2/Henrique_Abreu/Imagens/flow_function.png"
+             
+O parâmetro C utilizado para modelar o comportamento não-linear do descarregamento (equação 3):
              
 <center><img src="https://github.com/amandalemette/EQM2109/blob/017a03d2cd677afe384555feb72785ba5f40e8eb/Turma_2021.2/Henrique_Abreu/Imagens/unloading_behavior.png"
              
-O invariante de sobretensão é dado por (equação 3):
+O invariante de sobretensão é dado por (equação 4):
              
 <center><img src="https://github.com/amandalemette/EQM2109/blob/51c2bd8f3b6e12fbd5651253b83a604168712587/Turma_2021.2/Henrique_Abreu/Imagens/overstress_invariant.png"
 
-A tensão de equilíbrio é dada por (equação 4):
+A tensão de equilíbrio é dada por (equação 5):
 
 <center><img src="https://github.com/amandalemette/EQM2109/blob/51c2bd8f3b6e12fbd5651253b83a604168712587/Turma_2021.2/Henrique_Abreu/Imagens/equilibrium_stress-rate.png"
 
-A função de forma é dada por (equação 5):
+A função de forma é dada por (equação 6):
              
 <center><img src="https://github.com/amandalemette/EQM2109/blob/51c2bd8f3b6e12fbd5651253b83a604168712587/Turma_2021.2/Henrique_Abreu/Imagens/shape_function.png"
              
-A tensão cinemática é dada por (equação 6):
+A tensão cinemática é dada por (equação 7):
              
 <center><img src="https://github.com/amandalemette/EQM2109/blob/51c2bd8f3b6e12fbd5651253b83a604168712587/Turma_2021.2/Henrique_Abreu/Imagens/kinematic_stress.png"
 
-E o módulo da tangente é dado por (equação 7):
+E o módulo da tangente é dado por (equação 8):
              
 <center><img src="https://github.com/amandalemette/EQM2109/blob/51c2bd8f3b6e12fbd5651253b83a604168712587/Turma_2021.2/Henrique_Abreu/Imagens/tangent_modulus.png"
              
@@ -56,13 +64,9 @@ As condições de contorno foram dadas pelo artigo na tabela 1:
 
 <center><img src="https://github.com/amandalemette/EQM2109/blob/51c2bd8f3b6e12fbd5651253b83a604168712587/Turma_2021.2/Henrique_Abreu/Imagens/chart.png"
 
-Estas equações constitutivas (equações 2-7) permitem que o modelo VBS (equação 1) forneça a  deformação para diferentes tensões. Deste modo, as equações constitutivas foram escritas em Python à fim de replicar o modelo VBS. Por fim, utilizou-se as tensões experimentais, armazenadas no dataframe df0, para se obter as deformações a partir da réplica do modelo VBS criada no Python.
+Estas equações constitutivas (equações 2-8) permitem que o modelo VBS (equação 1) forneça a  deformação para diferentes tensões. Deste modo, as equações constitutivas foram escritas em Python à fim de replicar o modelo VBS. Por fim, utilizou-se as tensões experimentais, armazenadas no dataframe df0, para se obter as deformações a partir da réplica do modelo VBS criada no Python.
              
 # Resultados e Discussões
-
-A figura 1 pode ser dividida em três regiões, região elástica (região I), região plástica (região II), e região de descarregamento (região III). A soma das regiões I e II constituem a região de carregamento, ou seja, onde um único eixo do corpo de prova estava submetido a uma carga. Já a região de descarregamento demonstra o comportamento mecânico do corpo de prova ao deixar de ser submetido a mesma carga que ocorria durante o carregamento. Na região elástica (região I) a relação entre tensão e deformação deve ser linear, pois o corpo de prova deve ser capaz de recuperar a sua forma original ao cessar o carregamento. Já na região plástica (região II) percebe-se que não existe mais relação linear entre a tensão e a deformação e portanto o corpo de prova está sofrendo uma deformação permanente. Na região de descarregamento, pode-se perceber que o material recupera ligeiramente a sua forma com a diminuição da tensão, demonstrando que existe elasticidade ainda na região plástica.
-             
-<center><img src="https://github.com/amandalemette/EQM2109/blob/eb592a0370b82cb17191247a6ecffbb4b30d0f3d/Turma_2021.2/Henrique_Abreu/Imagens/figura3_elast_plast_unload.png"
              
 Pela função de escoamento do modelo VBS replicado em Python, pôde-se obter uma curva próxima à experimental na região elástica, região a qual a curva de escoamento é linear. Porém o modelo obtido não apresentou a linearidade característica desta região do gráfico.
 
