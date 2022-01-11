@@ -18,15 +18,15 @@ No artigo "High density polyethylene (HDPE): Experiments and modeling" foi anali
 
 # Metodologia
 
-Um ensaio de tração uniaxial é realizado ao
-
 A figura abaixo (figura 1), extraída do artigo "High density polyethylene (HDPE): Experiments and modeling", apresenta a relação entre tensão e deformação para o PEAD após um ensaio de tração uniaxial. É dada a relação experimental e predita pelo modelo VBS para três taxas de deformação diferentes.
 
 <center><img src="https://github.com/amandalemette/EQM2109/blob/22103b301f68ed48c5c7993a57ce58de59231bee/Turma_2021.2/Henrique_Abreu/Imagens/figura3.png"
  
 Um ensaio de tração uniaxial é realizado por meio de uma máquina de tensão e um corpo de prova, que por sua vez é submetido à uma força variável perpendicular ao plano da seção transversal deste corpo de prova, promovendo uma taxa de deformação constante. A figura 1 abaixo exemplifica um ensaio de tração.
              
-A figura 2 pode ser dividida em três regiões, região elástica (região I), região plástica (região II), e região de descarregamento (região III). A soma das regiões I e II constituem a região de carregamento, ou seja, onde um único eixo do corpo de prova estava submetido a uma carga. Já a região de descarregamento demonstra o comportamento mecânico do corpo de prova ao deixar de ser submetido a mesma carga que ocorria durante o carregamento, para este experimento isto ocorre quando uma deformação de 14% é atingida. Na região elástica (região I) a relação entre tensão e deformação deve ser linear, pois o corpo de prova deve ser capaz de recuperar a sua forma original ao cessar o carregamento. Já na região plástica (região II) percebe-se que não existe mais relação linear entre a tensão e a deformação e portanto o corpo de prova está sofrendo uma deformação permanente. Na região de descarregamento, pode-se perceber que o material recupera ligeiramente a sua forma com a diminuição da tensão, demonstrando que existe elasticidade ainda na região plástica.
+<center><img src="https://github.com/amandalemette/EQM2109/blob/2473f4c8443cd335d3ce2ee4d41e7374db88d38a/Turma_2021.2/Henrique_Abreu/Imagens/tensile_machine.jpg"
+             
+             A figura 2 pode ser dividida em três regiões, região elástica (região I), região plástica (região II), e região de descarregamento (região III). A soma das regiões I e II constituem a região de carregamento, ou seja, onde um único eixo do corpo de prova estava submetido a uma carga. Já a região de descarregamento demonstra o comportamento mecânico do corpo de prova ao deixar de ser submetido a mesma carga que ocorria durante o carregamento, para este experimento isto ocorre quando uma deformação de 14% é atingida. Na região elástica (região I) a relação entre tensão e deformação deve ser linear, pois o corpo de prova deve ser capaz de recuperar a sua forma original ao cessar o carregamento. Já na região plástica (região II) percebe-se que não existe mais relação linear entre a tensão e a deformação e portanto o corpo de prova está sofrendo uma deformação permanente. Na região de descarregamento, pode-se perceber que o material recupera ligeiramente a sua forma com a diminuição da tensão, demonstrando que existe elasticidade ainda na região plástica.
              
 <center><img src="https://github.com/amandalemette/EQM2109/blob/eb592a0370b82cb17191247a6ecffbb4b30d0f3d/Turma_2021.2/Henrique_Abreu/Imagens/figura3_elast_plast_unload.png"
 
