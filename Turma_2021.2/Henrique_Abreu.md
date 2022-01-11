@@ -19,6 +19,9 @@ No artigo "High density polyethylene (HDPE): Experiments and modeling" foi anali
 # Metodologia
 
 A figura abaixo, extraída do artigo "High density polyethylene (HDPE): Experiments and modeling", apresenta a relação entre tensão e deformação para o PEAD. É dada a relação experimental e predita pelo modelo VBS para três taxas de deformação diferentes.
+
+<center><img src="https://github.com/amandalemette/EQM2109/blob/22103b301f68ed48c5c7993a57ce58de59231bee/Turma_2021.2/Henrique_Abreu/Imagens/figura3.png"
+             
 Por meio do software GetData Graph Digitizer, foram extraídos os dados experimentais da curva com taxa de deformação igual a 0,001 [1/s]. Os dados foram salvos no arquivo serie1.txt e posteriormente armazenados em um dataframe (df0) no Python.
 
 A definição do modelo VBO é dado na equação 1 abaixo:
