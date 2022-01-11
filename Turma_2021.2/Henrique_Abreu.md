@@ -56,7 +56,7 @@ As condições de contorno foram dadas pelo artigo na tabela 1:
 
 <center><img src="https://github.com/amandalemette/EQM2109/blob/51c2bd8f3b6e12fbd5651253b83a604168712587/Turma_2021.2/Henrique_Abreu/Imagens/chart.png"
 
-Estas equações constitutivas (equações 2-7) permitem que o modelo VBS (equação 1) forneça a taxa de deformação para diferentes tensões. Deste modo, as equações constitutivas foram escritas em Python à fim de replicar o modelo VBS. Por fim, utilizou-se as tensões experimentais, armazenadas no dataframe df0, para se obter as deformações a partir da réplica do modelo VBS criada no Python.
+Estas equações constitutivas (equações 2-7) permitem que o modelo VBS (equação 1) forneça a  deformação para diferentes tensões. Deste modo, as equações constitutivas foram escritas em Python à fim de replicar o modelo VBS. Por fim, utilizou-se as tensões experimentais, armazenadas no dataframe df0, para se obter as deformações a partir da réplica do modelo VBS criada no Python.
              
 # Resultados e Discussões
 
@@ -64,7 +64,7 @@ A figura 1 pode ser dividida em três regiões, região elástica (região I), r
              
 <center><img src="https://github.com/amandalemette/EQM2109/blob/eb592a0370b82cb17191247a6ecffbb4b30d0f3d/Turma_2021.2/Henrique_Abreu/Imagens/figura3_elast_plast_unload.png"
              
-Pela função de escoamento do modelo VBS replicado, pôde-se obter uma curva próxima à experimental na região elástica, região a qual a curva de escoamento é linear. Porém o modelo obtido não apresentou a linearidade característica desta região do gráfico.
+Pela função de escoamento do modelo VBS replicado em Python, pôde-se obter uma curva próxima à experimental na região elástica, região a qual a curva de escoamento é linear. Porém o modelo obtido não apresentou a linearidade característica desta região do gráfico.
 
 <center><img src="https://github.com/amandalemette/EQM2109/blob/51c2bd8f3b6e12fbd5651253b83a604168712587/Turma_2021.2/Henrique_Abreu/Imagens/modelo_escoamento.png"
              
