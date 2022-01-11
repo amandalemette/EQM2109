@@ -14,15 +14,14 @@ Os modelos constitutivos podem ser divididos entre as duas principais abordagens
 
 Outro modelo constitutivo utilizado é uma modificação da teoria da viscoplasticidade baseada em sobrecarga (VBS), realizada por Colak (2005). A VBS foi inicialmente desenvolvida para explicar o comportamento mecânico de metais, suas modificações permitem a sua utilização para explicar o comportamento de polímeros, e mais recentemente, de nanocompósitos. O modelo VBS proposto por Colak (2005) utiliza o valor de dois tensores, uma propriedade escalar, e uma lei de crescimento para explicar o comportamento mecânico do polietileno de alta densidade (PEAD) em ensaios de carregamento e descarregamento uniaxial.
 
-No artigo "High density polyethylene (HDPE): Experiments and modeling" foi analisado o comportamento mecânico do polietileno de alta densidade (PEAD) submetido ao carregamento e descarregamento a diferentes taxas de deformação. Foram realizados também ensaios de fluência e relaxação a diferentes tensões e níveis de deformação. Os resultados experimentais foram então simulados utilizando o modelo VBS proposto por Colak (2005) e o modelo de Boyce et al. (2000) à fim de comparar as duas metodologias para a modelagem do comportamento do PEAD. Porém, neste trabalho foi utilizada somente a VBS para a modelagem do ensaio de tração uniaxial (carregamento e descarregamento).
+No artigo "High density polyethylene (HDPE): Experiments and modeling" foi analisado o comportamento mecânico do PEAD submetido ao carregamento e descarregamento a diferentes taxas de deformação. Foram realizados também ensaios de fluência e relaxação a diferentes tensões e níveis de deformação. Os resultados experimentais foram então simulados utilizando o modelo VBS proposto por Colak (2005) e o modelo de Boyce et al. (2000) à fim de comparar as duas metodologias para a modelagem do comportamento do PEAD. Porém, devido a ausência dos valores dos tensores utilizados no artigo no modelo de Boyce et al. (2000), neste trabalho foi utilizado somente o modelo VBS para replicar a modelagem do ensaio de tração uniaxial (carregamento e descarregamento).
 
 # Metodologia
 
-A figura 3 do artigo apresenta a relação entre tensão e deformação para o PEAD. É dada a relação experimental e predita pelo modelo VBS para três taxas de deformação diferentes.
-Por meio do software GetData Graph Digitizer, foram extraídos os dados experimentais para a curva da taxa de deformação igual a 0,001 [1/s]. Os dados foram salvos no arquivo
-serie1.txt e posteriormente armazenados em um dataframe (df0) no Python.
+A figura abaixo, extraída do artigo "High density polyethylene (HDPE): Experiments and modeling", apresenta a relação entre tensão e deformação para o PEAD. É dada a relação experimental e predita pelo modelo VBS para três taxas de deformação diferentes.
+Por meio do software GetData Graph Digitizer, foram extraídos os dados experimentais da curva com taxa de deformação igual a 0,001 [1/s]. Os dados foram salvos no arquivo serie1.txt e posteriormente armazenados em um dataframe (df0) no Python.
 
-A definição do modelo VBO foi dada na equação 14 do artigo.
+A definição do modelo VBO é dado na equação 1 abaixo:
 
 <center><img src="https://github.com/amandalemette/EQM2109/blob/9d1f5f867d07ddcb0fd70a78941064ab9f67063f/Turma_2021.2/Henrique_Abreu/Imagens/flow_law.png?raw=true"
 
@@ -54,7 +53,7 @@ As condições de contorno foram dadas pelo artigo na tabela 1:
 
 <center><img src="https://github.com/amandalemette/EQM2109/blob/51c2bd8f3b6e12fbd5651253b83a604168712587/Turma_2021.2/Henrique_Abreu/Imagens/chart.png"
 
-Estas equações permitem que o modelo VBS (equação 14) forneça a taxa de deformação para diferentes tensões. Deste modo, utilizou-se as tensões experimentais para obter as deformações a partir do modelo VBS.
+Estas equações constitutivas permitem que o modelo VBS (equação 1) forneça a taxa de deformação para diferentes tensões. Deste modo, as equações constitutivas foram escritas em Python à fim de replicar o modelo VBS. Por fim, utilizou-se as tensões experimentais, armazenadas no dataframe df0, para se obter as deformações a partir da réplica do modelo VBS criada no Python.
              
 # Resultados e Discussões
 
