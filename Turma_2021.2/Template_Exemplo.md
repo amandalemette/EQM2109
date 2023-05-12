@@ -1,3 +1,5 @@
+Sigam o presente template como base para a elaboração do relatório final de vocês. 
+
 Trabalho final da disciplina EQM2108 
 # Título do trabalho
 Aluna: Amanda Lemette
